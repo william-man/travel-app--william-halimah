@@ -34,3 +34,8 @@
     --fw-semi-bold: 600;
     --fw-bold: 700;
 }
+
+/* Utility Classes */
+.logo {
+    width: 125px;
+}
