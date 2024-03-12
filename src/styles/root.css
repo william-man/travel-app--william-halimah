@@ -16,8 +16,6 @@
     --clr-neutral-300: #ECE4D1;
     --clr-neutral-800: #345AB8;
     --clr-neutral-900: #090F20;
-    /* --clr-accent-300: ;
-    --clr-accent-400: ; */
 
     /* Fonts */
     --ff-regular: 'Comfortaa', sans-serif;
@@ -36,6 +34,16 @@
 }
 
 /* Utility Classes */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
 .logo {
     width: 125px;
+}
+
+ul {
+    list-style-type: none;
 }
