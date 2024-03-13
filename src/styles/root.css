@@ -1,0 +1,55 @@
+/* Import font */
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('src\styles\fonts\Comfortaa\Comfortaa-Regular.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-regular);
+}
+
+:root {
+    /* Colours */
+    --clr-neutral-100: #F3EFE2;
+    --clr-neutral-300: #ECE4D1;
+    --clr-neutral-800: #345AB8;
+    --clr-neutral-900: #090F20;
+
+    /* Fonts */
+    --ff-regular: 'Comfortaa', 'Inter', sans-serif;
+
+    /* Font sizes */
+    --fs-small: 0.8rem;
+    --fs-reg: 1rem;
+    --fs-medium: 1.5rem;
+    --fs-large: 2rem;
+
+    /* Font weights */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+}
+
+/* Utility Classes */
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    width: 125px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header, footer {
+    background-color: var(--clr-neutral-800);
+    color: var(--clr-neutral-100);
+}
