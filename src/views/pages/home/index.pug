@@ -1,7 +1,12 @@
 extends ../../layout
+include ../../mixins/navbar
+include ../../mixins/componentTest
 
 block content
+    header
+    +navbar()
     main
         h1.heading.foobar Hello world 
         div#potato.chips
             p Hot Potatoes
+            +test()
