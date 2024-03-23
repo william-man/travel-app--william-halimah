@@ -40,6 +40,60 @@
 .flex-row {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.gap-xs {
+  gap: 0.5rem;
+}
+
+.gap-lg {
+  gap: 2rem;
+}
+
+.gap-xl {
+  gap: 4rem;
+}
+
+.center {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.width-xxs {
+  max-width: 3rem;
+}
+
+.width-xs {
+  max-width: 10rem;
+}
+
+.width-sm {
+  max-width: 20rem;
+}
+
+.width-lg {
+  max-width: 60rem;
+}
+
+.stack-sm > * + * {
+  margin-top: 0.5rem;
+}
+
+.stack-md > * + * {
+  margin-top: 1rem;
+}
+
+.stack-lg > * + * {
+  margin-top: 2rem;
+}
+
+.stack-xl > * + * {
+  margin-top: 4rem;
 }
 
 .logo {
@@ -54,4 +108,17 @@ nav,
 footer {
   background-color: var(--clr-neutral-800);
   color: var(--clr-neutral-100);
+}
+
+/* Code to remove arrows from input[type=number] */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

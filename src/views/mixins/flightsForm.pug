@@ -1,24 +1,31 @@
 mixin flightsForm()
     script(src="https://kit.fontawesome.com/288cb3cbfc.js" crossorigin="anonymous")
+    script(type="text/javascript" defer src="flightsForm/flightsForm.js")
+    link(rel="stylesheet" href="flightsForm.css")
     h1 Get the best flights with the best rates
     form.flex-row
-        .box
+        .box.width-xs
             label(for="origin") From
             select(id="origin" name="origin" placeholder="Enter airport here")
                 option Choose airport here
         button
             i.fa-solid.fa-right-left
-        .box
+        .box.width-xs
             label(for="destination") To
             select(id="destination" name="destination" placeholder="Enter airport here")
                 option Choose airport here
-        .box
+        .box.width-xs
             label(for="depart") Depart
             input(id="depart" type="date" name="depart" placeholder="Add date")
-        .box
+        .box.width-xs
             label(for="return") Return
             input(id="return" type="date" name="return" placeholder="Add date")
-        .box
-            label(for="travellers") Travellers
-            input(id="travellers" type="dropdown" name="travellers" placeholder="1 Adult")
+        .box.width-xs
+            label(for="passengers") Passengers (Adults)
+            .flex-row.center
+                button(id="minus").operator
+                    i.fa-solid.fa-minus
+                input(id="passengers" type="number" name="passengers" value="1" min="1" max="8" size="1").width-xxs
+                button(id="plus").operator
+                    i.fa-solid.fa-plus
         button(type="submit") Submit
