@@ -2,6 +2,7 @@ extends ../../layout
 include ../../mixins/navbar
 include ../../mixins/flightsForm
 include ../../mixins/componentTest
+include ../../mixins/destinationCard
 
 block content
     header
@@ -12,3 +13,5 @@ block content
         div#potato.chips
             p Hot Potatoes
             +test()
+        +destinations ('chris-karidis-nnzkZNYWHaU-unsplash.jpg','Paris','France','Photo by Chris Karidis on Unsplash')
+        
