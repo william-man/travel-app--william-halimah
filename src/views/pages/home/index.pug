@@ -2,6 +2,7 @@ extends ../../layout
 include ../../mixins/navbar
 include ../../mixins/flightsForm
 include ../../mixins/componentTest
+include ../../mixins/footer
 
 block content
     header
@@ -12,3 +13,5 @@ block content
         div#potato.chips
             p Hot Potatoes
             +test()
+    footer 
+        +footer()
