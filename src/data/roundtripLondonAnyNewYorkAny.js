@@ -20,7 +20,7 @@ departDate = 2024-04-15
 returnDate = 2024-04-30
 */
 
-export default data = {
+export default {
   data: {
     context: {
       status: "incomplete",

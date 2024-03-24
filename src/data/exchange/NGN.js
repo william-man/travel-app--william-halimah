@@ -1,4 +1,9 @@
-export default data = {
+/*
+Conversion rates from NGN to other currencies
+Date: "Sun, 24 Mar 2024 00:00:01 +0000",
+*/
+
+export default {
   result: "success",
   documentation: "https://www.exchangerate-api.com/docs",
   terms_of_use: "https://www.exchangerate-api.com/terms",
