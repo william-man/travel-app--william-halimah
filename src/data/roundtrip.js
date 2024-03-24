@@ -1,4 +1,4 @@
-export default data = {
+export default {
   data: {
     context: {
       status: "incomplete",

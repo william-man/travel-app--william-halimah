@@ -1,14 +1,10 @@
 extends ../layout
-include ../../mixins/navbar
-include ../../mixins/footer
-include ../../mixins/flightsResults
-include ../../mixins/resultCard
+include ../mixins/flightsForm
+include ../mixins/flightsResults
+include ../mixins/resultCard
 
 block content
-    header
-        +navbar()
     main
+        +flightsForm()
         +flightsResults()
         +resultCard()
-    footer 
-        +footer()
