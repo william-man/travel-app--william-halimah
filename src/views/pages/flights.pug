@@ -1,2 +1,14 @@
 extends ../layout
+include ../../mixins/navbar
+include ../../mixins/footer
+include ../../mixins/flightsResults
+include ../../mixins/resultCard
 
+block content
+    header
+        +navbar()
+    main
+        +flightsResults()
+        +resultCard()
+    footer 
+        +footer()
