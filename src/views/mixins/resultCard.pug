@@ -1,0 +1,31 @@
+mixin resultCard()
+    .result
+        .grid
+            .carrier.carrier-departure
+            .flight-grid
+                .col.col-departure
+                    p.time 06.35
+                        span.airport STN
+                .col.col-duration
+                    p.duration 2h
+                    .line
+                        i.fa-solid.fa-plane
+                    p.stops Direct
+                .col.col-arrival
+                    p.time 09:35
+                        span.airport MXP 
+        .grid
+            .carrier.carrier-return
+            .flight-grid
+                .col.col-departure
+                    p.time 13.20
+                        span.airport MXP
+                .col.col-duration
+                    p.duration 2h06
+                    .line
+                        i.fa-solid.fa-plane
+                    p.stops Direct
+                .col.col-arrival
+                    p.time 14:25
+                        span.airport STN
+        .price £61
