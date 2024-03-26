@@ -38,12 +38,11 @@ app.get("/flights", (req, res) => {
 });
 
 app.get("/currency", (req, res) => {
-  
   res.render("pages/currency");
 });
 
 app.post("/submit-exchange-form", async (req, res) => {
-  const { fromCurrency } = req.body;
+  const { fromCurrency, toCurrency, amount } = req.body;
 
   try {
     const response = await fetch(
@@ -53,8 +52,13 @@ app.post("/submit-exchange-form", async (req, res) => {
         fromCurrency
     );
     if (response.ok && response.status === 200) {
-      const data = await response.json();
-      session[fromCurrency] = data;
+      const { conversion_rates } = await response.json();
+      session.currencyData = {
+        from: fromCurrency,
+        to: toCurrency,
+        amount: amount || 0,
+        responseData: conversion_rates,
+      };
       res.redirect("/currency");
     } else {
       throw new Error(response.status);
@@ -62,6 +66,10 @@ app.post("/submit-exchange-form", async (req, res) => {
   } catch (error) {
     res.send(error.message);
   }
+});
+
+app.get("/currency-rates", (req, res) => {
+  res.send(session.currencyData);
 });
 
 app.get("*", (req, res) => {
