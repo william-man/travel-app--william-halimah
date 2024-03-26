@@ -9,7 +9,7 @@ class Converter {
     this.__fromCurrency = "";
     this.__toCurrency = "";
     this.__amount = 0;
-    this.__rates = [];
+    this.__rates = null;
     this.__rate = 0;
   }
   //getters and setters for fromCurrency
@@ -50,12 +50,54 @@ class Converter {
     this.__rate = this.__rates[currency];
   }
 
-  convert(multiplier = 1) {
-    return this.__amount * this.__rate * multiplier;
+  convert() {
+    return this.__amount * this.__rate;
   }
 }
 
 const converter = new Converter();
+
+const convertedAmount = document.querySelector("#converted-amount");
+
+const fromRow1 = document.querySelector("#from-row-1").innerHTML.split(" ")[0];
+const fromRow2 = document.querySelector("#from-row-2").innerHTML.split(" ")[0];
+const fromRow3 = document.querySelector("#from-row-3").innerHTML.split(" ")[0];
+const fromRow4 = document.querySelector("#from-row-4").innerHTML.split(" ")[0];
+const fromRow5 = document.querySelector("#from-row-5").innerHTML.split(" ")[0];
+
+const toRow1 = document.querySelector("#to-row-1");
+const toRow2 = document.querySelector("#to-row-2");
+const toRow3 = document.querySelector("#to-row-3");
+const toRow4 = document.querySelector("#to-row-4");
+const toRow5 = document.querySelector("#to-row-5");
+
+const displayConvertedCurrency = () => {
+  toRow1.innerHTML =
+    (parseFloat(fromRow1) * converter.rate).toFixed(2) +
+    " " +
+    converter.toCurrency;
+  toRow2.innerHTML =
+    (parseFloat(fromRow2) * converter.rate).toFixed(2) +
+    " " +
+    converter.toCurrency;
+  toRow3.innerHTML =
+    (parseFloat(fromRow3) * converter.rate).toFixed(2) +
+    " " +
+    converter.toCurrency;
+  toRow4.innerHTML =
+    (parseFloat(fromRow4) * converter.rate).toFixed(2) +
+    " " +
+    converter.toCurrency;
+  toRow5.innerHTML =
+    (parseFloat(fromRow5) * converter.rate).toFixed(2) +
+    " " +
+    converter.toCurrency;
+};
+
+const displayConvertedAmount = () => {
+  convertedAmount.innerHTML =
+    converter.convert().toFixed(2) + " " + converter.toCurrency;
+};
 
 const fetchRates = async () => {
   try {
@@ -66,28 +108,15 @@ const fetchRates = async () => {
     const data = await response.json();
     converter.fromCurrency = await data.from;
     converter.toCurrency = await data.to;
-    converter.amount = await data.amount;
+    converter.amount = await parseFloat(data.amount);
     converter.rates = await data.responseData;
-    converter.rate = await data.to;
+    converter.rate = await converter.toCurrency;
+    //console.log(converter.rate);
+    displayConvertedCurrency();
+    displayConvertedAmount();
   } catch (error) {
     console.log("Fetch error: ", error.message);
   }
 };
 
 window.onload = fetchRates();
-
-const fromRow1 = document.querySelector("#from-row-1");
-const fromRow2 = document.querySelector("#from-row-2");
-const fromRow3 = document.querySelector("#from-row-3");
-const fromRow4 = document.querySelector("#from-row-4");
-const fromRow5 = document.querySelector("#from-row-5");
-
-const toRow1 = document.querySelector("#to-row-1");
-const toRow2 = document.querySelector("#to-row-2");
-const toRow3 = document.querySelector("#to-row-3");
-const toRow4 = document.querySelector("#to-row-4");
-const toRow5 = document.querySelector("#to-row-5");
-
-toRow1.innerHTML = converter.convert(
-  parseInt(fromRow1.innerText.split(" ")[0])
-);
