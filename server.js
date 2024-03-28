@@ -35,27 +35,12 @@ app.get("/", (req, res) => {
 });
 
 app.get("/flights", (req, res) => {
-  res.render("pages/flights", {
-    // outCarrier,
-    // outDepartureTime,
-    // outDepartureAirport,
-    // outDuration,
-    // outStops,
-    // outArrivalTime,
-    // outArrivalAirport,
-    // inCarrier,
-    // inDepartureTime,
-    // inDepartureAirport,
-    // inDuration,
-    // inStops,
-    // inArrivalTime,
-    // inArrivalAirport,
-    // ticketPrice,
-  });
+  res.render("pages/flights", { query: session.flightsData, itineraries: session.flightsData.responseData });
 });
 
 app.post("/submit-flights-search", async (req, res) => {
   const { origin, destination, departDate, returnDate, passengers } = req.body;
+
   const url =
     process.env.SKYSCANNER_URL +
     `fromEntityId=${origin}` +
@@ -73,26 +58,20 @@ app.post("/submit-flights-search", async (req, res) => {
       },
     });
 
-    const {
-      data: { intineraries },
-    } = await response.json();
+    const {data: {itineraries}} = await response.json();
     session.flightsData = {
       from: origin,
       to: destination,
       leave: departDate,
       return: returnDate,
       adults: passengers,
-      responseData: data.intineraries,
+      responseData: itineraries,
     };
+
     res.redirect("/flights");
-    console.log(result);
   } catch (error) {
     console.error(error);
   }
-});
-
-app.get("/flight-results", (req, res) => {
-  res.send(session.flightsData);
 });
 
 app.get("/currency", (req, res) => {
