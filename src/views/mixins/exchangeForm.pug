@@ -1,5 +1,6 @@
 mixin exchange(from,to)
     link(rel="stylesheet" href="flightsForm.css")
+    script(type="module", src="./swapCurrency/swapCurrency.js") 
     form.flex-row(action="/submit-exchange-form" id="currency-exchange-container" method="post")
         .box.width-xs
             label(for="amount") Amount
@@ -12,7 +13,7 @@ mixin exchange(from,to)
                 option(value="USD") USD
                 option(value="NGN") NGN
                 option(value="JMD") JMD
-        button.swap
+        button.swap#exchangeSwap 
             i.fa-solid.fa-right-left
         .box.width-xs
             label(for="toCurrency") To
