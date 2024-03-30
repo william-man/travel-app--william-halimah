@@ -10,5 +10,8 @@ block content
         - rates = exchangeRates.responseData || null 
         +exchange()
         if from && to && rates 
-            #converted-amount= `${(amount * rates[to]).toFixed(2)} ${to}`
+            if amount <= 0
+                #converted-amount= `${0} ${to}`
+            else 
+                #converted-amount= `${(amount * rates[to]).toFixed(2)} ${to}`
             +conversionTable(from,to,rates[to])
