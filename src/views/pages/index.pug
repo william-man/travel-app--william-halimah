@@ -6,14 +6,17 @@ include ../mixins/exchangeForm
 
 
 block content
-    main
-        h1 Get the best flights with the best rates
-        +flightsForm()
-        h2 Popular Destinations
-            .destination-gallery 
-                +destinations ('paris.png','Paris','France','Photo by Chris Karidis on Unsplash')
-                +destinations ('athens.png','Athens','Greece','Photo of Athens on Unsplash')
-                +destinations ('lagos.png','Lagos','Nigeria',`Photo by <a href="https://unsplash.com/@thewallpaperguy_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nupo Deyon Daniel</a> on <a href="https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-67ruAEYmp4c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-  `)
-        h2 Find the best currency exchange rates
-        +exchange()
+    main.center.width-lg.stack-lg
+        section.stack-md
+            h1 Get the best flights with the best rates
+            +flightsForm()
+        section.stack-md
+            h2 Popular Destinations
+                .destination-gallery 
+                    +destinations ('paris.png','Paris','France','Photo by Chris Karidis on Unsplash')
+                    +destinations ('athens.png','Athens','Greece','Photo of Athens on Unsplash')
+                    +destinations ('lagos.png','Lagos','Nigeria',`Photo by <a href="https://unsplash.com/@thewallpaperguy_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nupo Deyon Daniel</a> on <a href="https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-67ruAEYmp4c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    `)
+        section.stack-md
+            h2 Find the best currency exchange rates
+            +exchange()
