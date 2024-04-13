@@ -2,7 +2,7 @@
 
 .box {
   padding: 5px;
-  background-color: var(--clr-neutral-300);
+  background-color: var(--clr-neutral-250);
 }
 
 .box:nth-of-type(1) {

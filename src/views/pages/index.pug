@@ -10,6 +10,9 @@ block content
         h1 Get the best flights with the best rates
         +flightsForm()
         h2 Popular Destinations
-        +destinations ('chris-karidis-nnzkZNYWHaU-unsplash.jpg','Paris','France','Photo by Chris Karidis on Unsplash')
+            .desination-gallery 
+                +destinations ('paris.png','Paris','France','Photo by Chris Karidis on Unsplash')
+                +destinations ('athens.png','Athens','Greece','Photo by Chris Karidis on Unsplash')
+                +destinations ('venice.png','Venice','Italy','Photo by Chris Karidis on Unsplash')
         h2 Find the best currency exchange rates
         +exchange()

@@ -13,8 +13,11 @@
 
 :root {
   /* Colours */
-  --clr-neutral-100: #f3efe2;
+  --clr-neutral-100: #f8f9ff;
+  --clr-neutral-200: #ebeeff;
+  --clr-neutral-250: #E4EAFF;
   --clr-neutral-300: #ece4d1;
+  --clr-neutral-400: #c3d7ff;
   --clr-neutral-800: #345ab8;
   --clr-neutral-900: #090f20;
 
@@ -101,6 +104,10 @@
 
 .logo {
   width: 125px;
+}
+
+body {
+  background-color: var(--clr-neutral-100);
 }
 
 ul {
