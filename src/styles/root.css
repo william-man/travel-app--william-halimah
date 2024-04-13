@@ -15,7 +15,7 @@
   /* Colours */
   --clr-neutral-100: #f8f9ff;
   --clr-neutral-200: #ebeeff;
-  --clr-neutral-250: #E4EAFF;
+  --clr-neutral-250: #e4eaff;
   --clr-neutral-300: #ece4d1;
   --clr-neutral-400: #c3d7ff;
   --clr-neutral-800: #345ab8;
@@ -67,7 +67,6 @@
   max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
-  justify-content: center;
 }
 
 .width-xxs {
