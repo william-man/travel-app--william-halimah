@@ -7,7 +7,7 @@ mixin flightsForm()
         - const newYork = "eyJlIjoiMjc1Mzc1NDIiLCJzIjoiTllDQSIsImgiOiIyNzUzNzU0MiIsInQiOiJDSVRZIn0="
         - const paris = "eyJlIjoiMjc1Mzk3MzMiLCJzIjoiUEFSSSIsImgiOiIyNzUzOTczMyIsInQiOiJDSVRZIn0="
         - const rome = "eyJlIjoiMjc1Mzk3OTMiLCJzIjoiUk9NRSIsImgiOiIyNzUzOTc5MyIsInQiOiJDSVRZIn0="
-    link(rel="stylesheet" href="flightsForm.css")
+    link(rel="stylesheet" href="form.css")
     form.flex-row(action="/submit-flights-search", method="POST")
         .box.width-xs
             label(for="origin") From
@@ -19,7 +19,7 @@ mixin flightsForm()
                 option(value=`${newYork}`) New York (Any)
                 option(value=`${paris}`) Paris (Any)
                 option(value=`${rome}`) Rome (Any)
-        button.swap
+        button.swap#flightSwap
             i.fa-solid.fa-right-left
         .box.width-xs
             label(for="destination") To
