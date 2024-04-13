@@ -4,8 +4,13 @@ import bodyParser from "body-parser";
 import { fileURLToPath } from "url";
 import session from "express-session";
 import "dotenv/config";
-import results from './src/data/roundtrip.js'
-import airportNames from './src/data/airportNames.js'
+import results from "./src/data/roundtrip.js";
+import airportNames from "./src/data/airportNames.js";
+import GBPRates from "./src/data/exchange/GBP.js";
+import EURRates from "./src/data/exchange/EUR.js";
+import USDRates from "./src/data/exchange/USD.js";
+import JMDRates from "./src/data/exchange/JMD.js";
+import NGNRates from "./src/data/exchange/NGN.js";
 
 const app = express();
 const PORT = process.env.PORT;
@@ -84,13 +89,13 @@ app.post("/submit-flights-search", async (req, res) => {
         "X-RapidAPI-Host": "sky-scanner3.p.rapidapi.com",
       },
     });
-    let resultData
+    let resultData;
     if (!response.ok || response.status !== 200) {
-      resultData = results
+      resultData = results;
     } else {
-      resultData = await response.json()
+      resultData = await response.json();
     }
-    
+
     const {
       data: { itineraries },
     } = resultData;
@@ -135,7 +140,34 @@ app.post("/submit-exchange-form", async (req, res) => {
       };
       res.redirect("/currency");
     } else {
-      throw new Error(response.status);
+      let backup;
+      switch (fromCurrency) {
+        case "GBP":
+          backup = GBPRates.conversion_rates;
+          break;
+        case "EUR":
+          backup = EURRatesRates.conversion_rates;
+          break;
+        case "USD":
+          backup = USDRatesPRates.conversion_rates;
+          break;
+        case "JMD":
+          backup = JMDRatesRates.conversion_rates;
+          break;
+        case "NGN":
+          backup = NGNRatesRates.conversion_rates;
+          break;
+        default:
+          backup = "";
+          break;
+      }
+      session.currencyData = {
+        from: fromCurrency,
+        to: toCurrency,
+        amount: amount || 0,
+        responseData: backup,
+      };
+      res.redirect("/currency");
     }
   } catch (error) {
     res.send(error.message);
