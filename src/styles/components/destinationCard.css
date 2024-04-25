@@ -1,6 +1,10 @@
+:root {
+  --card-max-width: 300px;
+  --card-min-height: 250px;
+}
 .destination-card-container {
-  max-width: 459px;
-  min-height: 301px;
+  max-width: var(--card-max-width);
+  min-height: var(--card-min-height);
   width: 100%;
   height: auto;
   border-radius: 0.75rem;
@@ -8,8 +12,8 @@
 
 .destination-card-title {
   position: relative;
-  bottom: -256px;
-  left: 1rem;
+  top: calc(var(--card-min-height) * 0.85);
+  left: calc(var(--card-max-width) * 0.05);
   color: var(--clr-neutral-250);
   font-size: 1rem;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,

@@ -1,4 +1,7 @@
 /* Import font */
+html {
+  font-size: 16px;
+}
 @font-face {
   font-family: "Comfortaa";
   src: url("./fonts/Comfortaa/Comfortaa-Regular.ttf") format("truetype");
@@ -81,23 +84,26 @@
 }
 
 .width-xxs {
-  max-width: 3rem;
+  max-width: 320px;
 }
 
 .width-xs {
-  max-width: 10rem;
+  max-width: 400px;
 }
 
 .width-sm {
-  max-width: 20rem;
+  max-width: 600px;
+}
+.width-md {
+  max-width: 1000px;
 }
 
 .width-lg {
-  max-width: 50rem;
+  max-width: 1200px;
 }
 
 .width-xl {
-  max-width: 60rem;
+  max-width: 1600px;
 }
 
 .stack-sm > * + * {
@@ -141,6 +147,7 @@ nav,
 footer {
   background-color: var(--clr-neutral-800);
   color: var(--clr-neutral-100);
+  min-height: 10vh;
 }
 
 nav > div {
@@ -150,6 +157,7 @@ nav > div {
 /* Main section */
 
 main {
+  min-height: 80vh;
   padding: 1rem 1.5rem;
 }
 
