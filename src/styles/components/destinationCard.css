@@ -1,5 +1,17 @@
 .destination-card-container {
-  max-width: 410px;
-  height: 327px;
-  scale: 0.5;
+  max-width: 459px;
+  min-height: 301px;
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+.destination-card-title {
+  position: relative;
+  bottom: -256px;
+  left: 1rem;
+  color: var(--clr-neutral-250);
+  font-size: 1rem;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
