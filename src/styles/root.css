@@ -121,6 +121,9 @@ html {
 .stack-xl > * + * {
   margin-top: 4rem;
 }
+.padding-sm {
+  padding: 5px;
+}
 
 /* Main classes */
 

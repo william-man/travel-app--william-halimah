@@ -1,6 +1,7 @@
 // Form Inputs
 const passengersMinusBtn = document.querySelector("#minus");
 const passengersPlusBtn = document.querySelector("#plus");
+const passengersInput = document.querySelector("#passengers");
 
 // Event listeners to update number of passengers by button press
 // Minus button decreases number of passengers until it hits 1
