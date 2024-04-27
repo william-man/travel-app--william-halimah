@@ -1,0 +1,6 @@
+.events-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-between;
+}

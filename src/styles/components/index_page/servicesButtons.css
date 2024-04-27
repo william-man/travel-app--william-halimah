@@ -1,0 +1,12 @@
+.service {
+  display: block;
+  background-color: var(--clr-neutral-800);
+  max-width: 200px;
+  width: 100%;
+  padding: 10px 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+.service:hover, .service:focus{
+    
+}

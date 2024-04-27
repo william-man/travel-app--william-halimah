@@ -1,7 +1,10 @@
 @import url("root.css");
 @import url("form.css");
 @import url("resultCard.css");
-@import url("flightsResults.css");
-@import url("destinationCard.css");
-@import url("destinationGallery.css");
-@import url("conversionTable.css");
+@import url("./components/flights_page/flightsResults.css");
+@import url("./components/index_page/destinationCard.css");
+@import url("./components/index_page/destinationGallery.css");
+@import url("./components/currency_page/conversionTable.css");
+@import url("./components/index_page/servicesButtons.css");
+@import url("./components/index_page/eventsGallery.css");
+@import url("./components/index_page/eventsCard.css");

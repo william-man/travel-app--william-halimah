@@ -146,16 +146,16 @@ app.post("/submit-exchange-form", async (req, res) => {
           backup = GBPRates.conversion_rates;
           break;
         case "EUR":
-          backup = EURRatesRates.conversion_rates;
+          backup = EURRates.conversion_rates;
           break;
         case "USD":
-          backup = USDRatesPRates.conversion_rates;
+          backup = USDRates.conversion_rates;
           break;
         case "JMD":
-          backup = JMDRatesRates.conversion_rates;
+          backup = JMDRates.conversion_rates;
           break;
         case "NGN":
-          backup = NGNRatesRates.conversion_rates;
+          backup = NGNRates.conversion_rates;
           break;
         default:
           backup = "";
