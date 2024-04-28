@@ -1,6 +1,6 @@
-@import url("root.css");
-@import url("form.css");
-@import url("resultCard.css");
+@import url("./root.css");
+@import url("./components/form.css");
+@import url("./components/resultCard.css");
 @import url("./components/flights_page/flightsResults.css");
 @import url("./components/index_page/destinationCard.css");
 @import url("./components/index_page/destinationGallery.css");
@@ -8,3 +8,4 @@
 @import url("./components/index_page/servicesButtons.css");
 @import url("./components/index_page/eventsGallery.css");
 @import url("./components/index_page/eventsCard.css");
+@import url("./components/error_page/error.css");
