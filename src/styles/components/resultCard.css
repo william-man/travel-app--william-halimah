@@ -1,5 +1,5 @@
 .result {
-  max-width: 35rem;
+  width: 100%;
   border: 1px solid #000;
   border-radius: 10px;
   padding: 1rem;
@@ -45,6 +45,10 @@
 .col-duration .duration,
 .stops {
   font-size: 0.8rem;
+}
+.duration,
+.stops {
+  margin: 10px 0;
 }
 
 .line {
