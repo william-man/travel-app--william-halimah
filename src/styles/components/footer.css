@@ -1,0 +1,12 @@
+.footer-container * :not(img) {
+  min-width: 200px;
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+}
+
+@media (max-width: 707px) {
+  .footer-container * :not(img) {
+    width: 100%;
+  }
+}
