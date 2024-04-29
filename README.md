@@ -1,5 +1,7 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+
 <a name="readme-top"></a>
+
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
@@ -7,8 +9,6 @@
 *** Don't forget to give the project a star!
 *** Thanks again! Now go create something AMAZING! :D
 -->
-
-
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -18,14 +18,13 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -49,8 +48,6 @@
     <a href="https://github.com/fac30/travel-app--william-halimah/issues">Request Feature</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -77,59 +74,52 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-
+Hosted on onrender.com.
+View live demo: [JetSavr](https://travel-app-william-halimah.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Built With
 
-* [![Express][Express.js]][Express-url]
-* [![Pug][Pug.js]][Pug-url]
-* [![Node][Node.js]][Node-url]
+- [![Express][Express.js]][Express-url]
+- [![Pug][Pug.js]][Pug-url]
+- [![Node][Node.js]][Node-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
-
 
 ### Installation
 
 1. Get a free Exchange Rate API Key at [https://www.exchangerate-api.com/](https://www.exchangerate-api.com/)
 2. Get a free unofficial Sky Scanner API Key at [https://rapidapi.com/ntd119/api/sky-scanner3](https://rapidapi.com/ntd119/api/sky-scanner3)
-2. Fork the repo. Instructions can be found [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
-3. Install NPM packages
+3. Fork the repo. Instructions can be found [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
+4. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API keys in your `.env` like below. You can view a template in `.env.template`.
-    ```js
-    PORT = 3000
-    SESSION_SECRET = GENERATE SECRET USING PASSWORD GENERATOR
-    SKYSCANNER_KEY = API_KEY_HERE
-    EXCHANGE_KEY = EXCHANGE_API_KEY_HERE
-    ```
-5. To run the server, type `npm run dev` in your terminal.
-6. The server will be visible on `localhost:3000`.
+5. Enter your API keys in your `.env` like below. You can view a template in `.env.template`.
+   ```js
+   PORT = 3000
+   SESSION_SECRET = GENERATE SECRET USING PASSWORD GENERATOR
+   SKYSCANNER_KEY = API_KEY_HERE
+   EXCHANGE_KEY = EXCHANGE_API_KEY_HERE
+   ```
+6. To run the server, type `npm run dev` in your terminal.
+7. The server will be visible on `localhost:3000`.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
@@ -138,23 +128,21 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- ROADMAP -->
+
 ## Roadmap
 
 - [ ] Feature 1
 - [ ] Feature 2
 - [ ] Feature 3
-    - [ ] Nested Feature
+  - [ ] Nested Feature
 
 See the [open issues](https://github.com/fac30/travel-app--william-halimah/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -170,18 +158,16 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTACT -->
+
 ## Contact
 
 Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
@@ -190,21 +176,19 @@ Project Link: [https://github.com/fac30/travel-app--william-halimah](https://git
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- ACKNOWLEDGMENTS -->
+
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+- []()
+- []()
+- []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/fac30/travel-app--william-halimah.svg?style=for-the-badge
 [contributors-url]: https://github.com/fac30/travel-app--william-halimah/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/fac30/travel-app--william-halimah.svg?style=for-the-badge
@@ -233,4 +217,4 @@ Project Link: [https://github.com/fac30/travel-app--william-halimah](https://git
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[JQuery-url]: https://jquery.com
