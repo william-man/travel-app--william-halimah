@@ -79,6 +79,9 @@
 ## About The Project
 
 Hosted on onrender.com.
+
+The site requires roughly 50 seconds to spin up if it is not actively used.
+
 View live demo: [JetSavr](https://travel-app-william-halimah.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
