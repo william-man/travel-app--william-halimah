@@ -1,6 +1,7 @@
 .events-container {
-  max-width: 500px;
-  width: 100%;
+  max-width: 560px;
+  min-width: 250px;
+  width: 48%;
   background-color: var(--clr-neutral-250);
   padding: 10px;
   border-radius: 5px;
@@ -22,4 +23,10 @@
 .events-link:focus {
   background-color: var(--clr-neutral-800);
   color: var(--clr-neutral-250);
+}
+
+@media (max-width: 567px) {
+  .events-container {
+    width: 100%;
+  }
 }

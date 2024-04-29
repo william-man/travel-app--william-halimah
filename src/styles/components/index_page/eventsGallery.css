@@ -1,6 +1,8 @@
 .events-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 20px;
   justify-content: space-between;
 }
+/* For tablets in portait orientation */
+

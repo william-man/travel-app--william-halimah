@@ -1,9 +1,12 @@
 /* Input CSS */
-
+form {
+  background-color: var(--clr-neutral-250);
+  border-radius: 5px;
+  padding: 5px;
+}
 .box {
   width: fit-content;
   padding: 10px;
-  background-color: var(--clr-neutral-250);
 }
 .box * {
   margin: 0px 3px;
@@ -67,4 +70,7 @@ button[type="submit"]:active {
 }
 #plus:active {
   transform: scale(0.8);
+}
+/* For tablets in portrait orientation */
+@media (min-width: 768px) and (max-width: 1023px) {
 }

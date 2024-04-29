@@ -1,21 +1,30 @@
-:root {
-  --card-max-width: 300px;
-  --card-min-height: 250px;
-}
 .destination-card-container {
-  max-width: var(--card-max-width);
-  min-height: var(--card-min-height);
-  width: 100%;
+  max-width: 500px;
+  min-width: 250px;
+  min-height: 250px;
+  width: 30%;
   height: auto;
   border-radius: 0.75rem;
 }
 
 .destination-card-title {
   position: relative;
-  top: calc(var(--card-min-height) * 0.85);
-  left: calc(var(--card-max-width) * 0.05);
+  top: calc(250px * 0.85);
+  left: calc(370px * 0.05);
   color: var(--clr-neutral-250);
   font-size: 1rem;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
+}
+
+@media (max-width: 991px) {
+  .destination-card-container {
+    width: 48%;
+  }
+}
+
+@media (max-width: 567px) {
+  .destination-card-container {
+    width: 100%;
+  }
 }
