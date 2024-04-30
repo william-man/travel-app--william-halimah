@@ -1,11 +1,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/fac30/travel-app--william-halimah">
-    <img src="./src/assets/JetSavr-logo-old.png" alt="JetSavr Logo" style="scale:0.6">
-  </a>
-  <h1 align="center">JetSavr - Travel App</h1>
+    <img src="./src/assets/JetSavr-logo.png" alt="JetSavr Logo" width="50">
 </div>
+
+---
 
 <!-- ABOUT THE PROJECT -->
 
