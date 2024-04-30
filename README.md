@@ -1,41 +1,11 @@
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/fac30/travel-app--william-halimah">
     <img src="./src/assets/favicon.ico" alt="JetSavr Logo" width="80" height="80">
   </a>
-
-<h1 align="center">JetSavr - Travel App</h1>
-  <p align="center">
-    <a href="https://travel-app-william-halimah.onrender.com/">View Demo</a>
-  </p>
+  <h1 align="center">JetSavr - Travel App</h1>
 </div>
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
 
 <!-- ABOUT THE PROJECT -->
 
@@ -45,6 +15,7 @@ Hosted on onrender.com.
 
 The site requires roughly 50 seconds to spin up if it is not actively used.
 
+[https://travel-app-william-halimah.onrender.com/](View demo)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,8 +64,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTACT -->
 
 ## Contact
@@ -104,7 +73,6 @@ Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_
 Project Link: [https://github.com/fac30/travel-app--william-halimah](https://github.com/fac30/travel-app--william-halimah)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
