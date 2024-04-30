@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/fac30/travel-app--william-halimah">
-    <img src="./src/assets/JetSavr-logo-old.png" alt="JetSavr Logo" scale="0.6">
+    <img src="./src/assets/JetSavr-logo-old.png" alt="JetSavr Logo" style="scale:0.6">
   </a>
   <h1 align="center">JetSavr - Travel App</h1>
 </div>
