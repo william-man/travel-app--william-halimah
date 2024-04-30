@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="./src/assets/JetSavr-logo.png" alt="JetSavr Logo" width="50">
+    <img src="./src/assets/JetSavr-logo.png" alt="JetSavr Logo" width="50%">
 </div>
 
 ---
