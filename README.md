@@ -7,9 +7,7 @@
   <h1 align="center">JetSavr - Travel App</h1>
 </div>
 
-<!-- ABOUT THE PROJECT -->
-
-## About The Project
+<!-- ABOUT THE PROJECT -->>
 
 Hosted on onrender.com.
 
